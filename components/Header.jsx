@@ -1,5 +1,7 @@
 import Image from "next/image"
 
+
+
 const Header = () => {
     return (
         <nav class="bg-gray-800">
@@ -21,8 +23,8 @@ const Header = () => {
                     </div>
                     <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div class="flex flex-shrink-0 items-center">
-                            <Image class="block h-8 w-auto lg:hidden" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" />
-                                <Image class="hidden h-8 w-auto lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" />
+                            <Image class="block h-8 w-auto lg:hidden" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" width={20} height={20}/>
+                                <Image class="hidden h-8 w-auto lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" width={20} height={20}/>
                                 
                                 <div class="hidden sm:ml-6 sm:block">
                                     <div class="flex space-x-4">
