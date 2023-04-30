@@ -8,6 +8,8 @@ import Header from '../components/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const myLoader = ({src}) => `https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500`
+
 export default function Home() {
   let { title, cats } = attributes
   return (
@@ -16,7 +18,7 @@ export default function Home() {
         <title>Awesome Kitties</title>          
     </Head>
     <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" /> 
-    <Header/> 
+    <Header loader={myLoader}/> 
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
     >

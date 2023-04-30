@@ -1,8 +1,7 @@
 import Image from "next/image";
-const myLoader = ({src}) => `https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500`
 
 
-const Header = () => {
+const Header = (props) => {
     return (
         <nav class="bg-gray-800">
 
