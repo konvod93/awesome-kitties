@@ -22,12 +22,12 @@ export default function Home() {
     >
       
         <article>
-          <h1>{title}</h1>
+          <h1 className="font-bold">{title}</h1>
           <HomeContent />
           <ul>
             {cats.map((cat, k) => (
               <li key={k}>
-                <h2>{cat.name}</h2>
+                <h2 className="font-bold">{cat.name}</h2>
                 <p>{cat.description}</p>
               </li>
             ))}
