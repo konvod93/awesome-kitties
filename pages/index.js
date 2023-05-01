@@ -16,7 +16,7 @@ export default function Home() {
         <title>Awesome Kitties</title>          
     </Head>
     <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" /> 
-    <Header/> 
+     
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
     >
