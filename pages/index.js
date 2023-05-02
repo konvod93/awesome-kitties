@@ -23,17 +23,18 @@ export default function Home() {
         <div className="w-screen mx-auto bg-orange-500">
           <h1 className="font-bold m-16 text-center text-white">{title}</h1>
           <div className="text-center text-white pb-8"><HomeContent /></div>
-        </div>
-        <article>
-          <ul>
-            {cats.map((cat, k) => (
-              <li key={k}>
+        </div>        
+        <article>          
+          <div className="grid grid-cols-3 gap-4 mt-10">            
+            {cats.map((cat, k) => (              
+              <div className="p-4 border border-indigo-600 rounded-lg shadow-lg" key={k}>
                 <h2 className="font-bold">{cat.name}</h2>
                 <p>{cat.description}</p>
-              </li>
-            ))}
-          </ul>
-        </article>
+              </div>       
+              
+            ))}            
+          </div>          
+        </article>        
       </main>
     </>
 
