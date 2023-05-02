@@ -12,18 +12,19 @@ export default function Home() {
   let { title, cats } = attributes
   return (
     <>
-    <Head>
-        <title>Awesome Kitties</title>          
-    </Head>
-    <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" /> 
-     
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      
+      <Head>
+        <title>Awesome Kitties</title>
+      </Head>
+      <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+
+      <main
+        className={`flex min-h-screen flex-col items-center justify-start ${inter.className}`}
+      >
+        <div className="w-screen mx-auto bg-orange-500">
+          <h1 className="font-bold m-16 text-center text-white">{title}</h1>
+          <div className="text-center text-white pb-8"><HomeContent /></div>
+        </div>
         <article>
-          <h1 className="font-bold">{title}</h1>
-          <HomeContent />
           <ul>
             {cats.map((cat, k) => (
               <li key={k}>
@@ -33,8 +34,8 @@ export default function Home() {
             ))}
           </ul>
         </article>
-    </main>
+      </main>
     </>
-      
+
   )
 }
