@@ -14,6 +14,10 @@ cats:
   - name: Vasya
     thumbnail: img/vasya.jpg
     description: Very funny kitten Vaska
+  - name: Murzik
+    thumbnail: img/murzik.jpg
+    description: |
+      Murzik loves to walk in nature
 ---
 Welcome to my awesome page about cats of the internet. 
 
