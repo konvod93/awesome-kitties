@@ -11,16 +11,7 @@ cats:
   - description: Grumpy cat is an American celebrity cat known for her grumpy appearance.
     name: Grumpy cat (Tardar Sauce)
     thumbnail: /grumpy.jpg
-  - name: Vasya
-    thumbnail: img/vasya.jpg
-    description: Very funny kitten Vaska
-  - name: Murzik
-    thumbnail: img/murzik.jpg
-    description: |
-      Murzik loves to walk in nature
-  - name: Murka
-    thumbnail: img/murka.jpg
-    description: Murka is always just waiting to be stroked
+  
 ---
 Welcome to my awesome page about cats of the internet. 
 
