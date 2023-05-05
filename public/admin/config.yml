@@ -21,3 +21,12 @@ collections:
             - { label: "Name", name: "name", widget: "string"}
             - { label: "Kitty Image", name: "thumbnail", widget: "image"}            
             - { label: "Description", name: "description", widget: "text"}
+    - label: "Post"
+      name: "post"
+      folder: "/content"
+      create: true
+      fields:
+       - {label: "Title", name: "title", widget: "string"}
+       - {label: "Publish Date", name: "date", widget: "datetime"}
+       - {label: "Kittie Image", name: "thumbnail", widget: "image"}
+       - {label: "Body", name: "body", widget: "markdown"}
