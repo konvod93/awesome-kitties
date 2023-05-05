@@ -4,6 +4,7 @@ import { Component } from 'react'
 import { attributes, react as HomeContent } from '../content/home.md'
 import Script from 'next/script'
 import Header from '../components/Header'
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,7 +29,8 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-4 mt-10">            
             {cats.map((cat, k) => (              
               <div className="p-4 border border-indigo-600 rounded-lg shadow-lg" key={k}>
-                <h2 className="font-bold">{cat.name}</h2>
+                <h2 className="font-bold">{cat.name}</h2>                
+                <Image src={cat.thumbnail} alt="thumbnail" width={100} height={100}/>
                 <p>{cat.description}</p>
               </div>       
               
