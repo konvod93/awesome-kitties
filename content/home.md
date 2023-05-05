@@ -18,6 +18,9 @@ cats:
     thumbnail: img/murzik.jpg
     description: |
       Murzik loves to walk in nature
+  - name: Murka
+    thumbnail: img/murka.jpg
+    description: Murka is always just waiting to be stroked
 ---
 Welcome to my awesome page about cats of the internet. 
 
