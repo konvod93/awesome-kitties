@@ -19,5 +19,5 @@ collections:
           widget: list
           fields:
             - { label: "Name", name: "name", widget: "string"}
-            - { label: "Kitty Image", name: "thumbnail", widget: "image", choose_url: true, default: "", media_library: config: multiple: true }            
+            - { label: "Kitty Image", name: "thumbnail", widget: "image", choose_url: true, default: "", media_library: {config: multiple: true} }            
             - { label: "Description", name: "description", widget: "text"}
