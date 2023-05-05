@@ -26,7 +26,7 @@ export default function Home() {
           <div className="text-center text-white pb-8"><HomeContent /></div>
         </div>        
         <article>          
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-10">            
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-10">            
             {cats.map((cat, k) => (              
               <div className="p-4 border border-indigo-600 rounded-lg shadow-lg" key={k}>
                 <h2 className="font-bold">{cat.name}</h2>                
