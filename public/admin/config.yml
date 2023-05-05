@@ -24,6 +24,7 @@ collections:
     - label: "Post"
       name: "post"
       folder: "/content"
+      file: "/content/${filename}.md"
       create: true
       fields:
        - {label: "Title", name: "title", widget: "string"}
