@@ -32,7 +32,7 @@ export default function Home() {
                 <h2 className="font-bold">{cat.name}</h2>                
                 <Image src={cat.thumbnail} alt="thumbnail" width={100} height={100}/>
                 <p>{cat.description}</p>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><Link href="#">Read More...</Link></button>
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><Link href="#">Read More...</Link></button>
               </div>       
               
             ))}            
