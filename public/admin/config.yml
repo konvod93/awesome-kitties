@@ -26,7 +26,7 @@ collections:
     folder: "/content/posts"
     extension: "md"
     format: "frontmatter"
-    slug: {{slug}}
+    slug: "{{slug}}"
     create: true
     identifier_field: slug
     summary: "{{title}}"
