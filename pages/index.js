@@ -1,5 +1,3 @@
-import fs from 'fs'
-import matter from 'gray-matter'
 import { Inter } from 'next/font/google'
 import Head from "next/head"
 import { Component } from 'react'
