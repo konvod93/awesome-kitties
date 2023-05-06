@@ -24,7 +24,7 @@ collections:
   - name: "posts"
     label: "Posts"     
     folder: "/content/posts"
-    extension: "md"
+    extension: "mdx"
     format: "frontmatter"
     slug: "{{slug}}"
     create: true
