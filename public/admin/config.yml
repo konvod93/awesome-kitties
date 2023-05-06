@@ -27,6 +27,8 @@ collections:
     - label: "Post"
       name: "post"
       folder: "/content/posts"
+      extension: "md"
+      format: "frontmatter"
       slug: {{slug}}
       create: true
       fields:
