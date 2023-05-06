@@ -21,13 +21,17 @@ collections:
             - { label: "Name", name: "name", widget: "string"}
             - { label: "Kitty Image", name: "thumbnail", widget: "image"}            
             - { label: "Description", name: "description", widget: "text"}
+  - name: "posts"
+    label: "Posts"
+    files:
     - label: "Post"
       name: "post"
-      folder: "/content"
-      file: "/content/${filename}.md"
+      folder: "/content/posts"
+      file: {`/content/posts/${filename}.md`}
       create: true
       fields:
        - {label: "Title", name: "title", widget: "string"}
        - {label: "Publish Date", name: "date", widget: "datetime"}
+       - { label: "Description", name: "description", widget: "text"}
        - {label: "Kittie Image", name: "thumbnail", widget: "image"}
        - {label: "Body", name: "body", widget: "markdown"}

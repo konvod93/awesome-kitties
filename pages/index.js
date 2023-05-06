@@ -1,9 +1,10 @@
+import fs from 'fs'
+import matter from 'gray-matter'
 import { Inter } from 'next/font/google'
 import Head from "next/head"
 import { Component } from 'react'
 import { attributes, react as HomeContent } from '../content/home.md'
 import Script from 'next/script'
-import Header from '../components/Header'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -33,7 +34,7 @@ export default function Home() {
                 <h2 className="font-bold">{cat.name}</h2>                
                 <Image src={cat.thumbnail} alt="thumbnail" width={100} height={100}/>
                 <p>{cat.description}</p>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><Link href='#'>Read More...</Link></button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><Link href={`/content/${slug}`}>Read More...</Link></button>
               </div>       
               
             ))}            
